@@ -9,6 +9,10 @@
 
 @media screen and (max-width:1440px) {
 
+    .mobile {
+        display: block;
+    }
+
     .video {
         display: none;
     }
@@ -105,7 +109,7 @@
 
 @media screen and (max-width:1024px) {
     main h1 {
-        font-size: 4rem;
+        font-size: 4.5rem;
     }
 
     .exhibition p {
@@ -119,42 +123,47 @@
     .signul li {
         font-size: 1rem;
     }
+
     .gotop {
         display: none;
     }
-      .exhibition>div {
+
+    .exhibition>div {
         width: 90%;
 
     }
-    .footersection {
-    width: 100%;
-    font-size: 0.8rem;
-    padding-top: 0%;
-}
 
-footer .nav1 ul li {
-    font-size: 0.8rem;
-}
-footer .snslogo {
-    width: 100%;
-}
+    .footersection {
+        width: 100%;
+        font-size: 0.8rem;
+        padding-top: 0%;
+    }
+
+    footer .nav1 ul li {
+        font-size: 0.8rem;
+    }
+
+    footer .snslogo {
+        width: 100%;
+    }
 
     footer .nav1 ul li {
         display: none;
     }
 
     footer .nav2 {
-    width: 100%;
-    padding-top: 0%;
-}
+        width: 100%;
+        padding-top: 0%;
+    }
 
-footer .snslogo {
-    bottom: 0;
-}
-footer {
-    display: flex;
-    align-items: center;
-}
+    footer .snslogo {
+        bottom: 0;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+    }
 
 }
 
@@ -162,11 +171,103 @@ footer {
 
 @media screen and (max-width:768px) {
 
+    header .headerlogo {
+        margin-top: 20%;
+        position: fixed;
+        right: 100px;
+        top: 20px;
+        gap: 20px;
+    }
+
+    header img {
+        margin-top: 20px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+    .main>li a {
+        line-height: 50px;
+    }
+    .main>li.on {
+        height: 50px;
+    }
+    .main>li ul {
+        width: 100%;
+        position: static;
+        background-color: #1d1d1d;
+        transform: none;
+    }
+    .main>li:hover ul {
+        opacity: 0;
+        visibility: hidden;
+    }
+    .main>li ul.on {
+        opacity: 1;
+        visibility: visible;
+    }
+    .main {
+        display: none;
+        background-color: #000000;
+        top: 100px;
+        width: 100%;
+        position: absolute;
+    }
+
+    .headers {
+        width: 100%;
+        top: 0;
+    }
+
+    .topsnslogo {
+        display: none;
+    }
+
+    header {
+        width: 100%;
+        height: 100px;
+    }
+
+    header img {
+        width: 30%;
+        object-fit: contain;
+    }
+
+    .headerlogo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header .headerlogo {
+        margin-top: 0;
+
+    }
+
+
+    .logos img {
+        width: 50%;
+    }
+
+    .mobile img {
+        object-fit: contain;
+        width: 100%;
+        height: 400px;
+    }
+
+    .imgposter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
     .inner {
         width: 100%;
     }
+
     main h1 {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     .main-section {
@@ -193,37 +294,95 @@ footer {
     }
 
     .footerbtm {
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-}
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
 
 
-footer .nav2  {
-    width: 100%;
-    font-size: 1rem;
-    flex-direction: row;
+    footer .nav2 {
+        width: 100%;
+        font-size: 1rem;
+        flex-direction: row;
+    }
+
+    .footersection img {
+        display: none;
+    }
+
+    footer .snslogo {
+        width: 100%;
+    }
+
+    .textbox {
+        display: none
+    }
+
+    .signul li {
+        font-size: 0.8rem;
+    }
+
 }
 
-.footersection img {
-    display: none;
+@media screen and (max-width:425px) {
+
+
+    .eventposter img {
+        width: 300px;
+        height: 400px;}
+
+      .headerlogo p {
+        display: none;
+      }
+
+        header .headerlogo {
+            top: 7px;
+            width: 100px;
+            right: 20px;
+        }
+    .noticebanner {
+        display: none;
+    }
+
+    .exhibition {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .exh1,
+    .exh2,
+    .exh3,
+    .exh4 {
+        margin: 0 auto
+    }
+
+    .exh5,
+    .exh6,
+    .exh7,
+    .exh8 {
+        margin: 0 auto;
+
+    }
+
+    main h2 {
+        padding-top: 10%;
+    }
+
+    main h1 {
+        font-size: 2.5rem;
+    }
+
+    .edev {
+        padding-right: 0px;
+    }
+
+    .noticesignul {
+        padding: 0;
+    }
 }
 
-footer .snslogo {
-    width: 100%;
-}
-
-.textbox {
-    display: none
-}
-
-.signul li {
-    font-size: 0.8rem;
-}
-
-header {
-    display: none
-}
 
 }

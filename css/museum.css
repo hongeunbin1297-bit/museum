@@ -19,28 +19,29 @@
     src: url(../fonts/Lora-Regular.ttf);
 }
 
-/* .mouseel {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 50px;
-    height: 50px;
-    background: url(../images/mouse.png) no-repeat center/contain;
-    transform: translate(-50%, -50%);
-    transition: all .5s;
-    z-index: 99;
-} */
+
+.hamburger {
+    display: none;
+}
+
+.mobile img {
+    object-fit: cover;
+    width: 100%;
+    height: 600px;
+    display: none;
+}
 
 
 header {
     position: fixed;
+    display: flex;
     background-color: black;
     z-index: 50;
     left: 0;
-    top: 0;
     width: 250px;
     height: 100%;
 }
+
 
 .headers {
     position: relative;
@@ -53,6 +54,11 @@ header .headerlogo {
     width: 200px;
     margin: auto;
     margin-top: 20%;
+}
+
+.logos img {
+    width: 208px;
+    height: 55px;
 }
 
 header img {
@@ -111,6 +117,7 @@ a {
     opacity: 0;
     visibility: hidden;
     transition: all .5s;
+    z-index: 9;
 }
 
 
@@ -155,7 +162,8 @@ main {
     height: auto;
     overflow: hidden;
 }
-main .inner {
+
+main {
     background: linear-gradient(#000, #b8b8b8);
 }
 
@@ -166,21 +174,25 @@ main .inner {
 .imgposters {
     display: flex;
     height: 700px;
+    width: 100%;
     justify-content: space-between
 }
 
 .imgposters img {
-    width: 320px;
-    height: 420px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .imgposter-1 {
     position: relative;
+    width: 320px;
+    height: 420px;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    
+    object-fit: cover;
+    background-color: aqua;
+
 }
 
 .imgposter-1::after {
@@ -188,8 +200,9 @@ main .inner {
     position: absolute;
     top: 0;
     left: 0;
-    width: 80.1%;
-    height: 99%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     background-color: rgba(0, 0, 0, 0.8);
     transition: all .5s;
     opacity: 0;
@@ -205,7 +218,7 @@ main .inner {
 
 .imgposter-1 button {
     border: none;
-    background-color: rgba(white,white,white,0.8);
+    background-color: rgba(white, white, white, 0.8);
     width: 200px;
     height: 50px;
     border-radius: 15px;
@@ -274,7 +287,7 @@ main h1 {
     font-size: 150px;
     text-align: center;
     margin-bottom: 10%;
-     font-family: 'lora';
+    font-family: 'lora';
 }
 
 
@@ -342,9 +355,11 @@ main h1 {
 .exh6,
 .exh7,
 .exh8 {
-    position: relative;
-    left: 0%;
+    /* position: relative;
+    left: 0%; */
+    margin-right: auto;
 }
+
 
 
 .education {
@@ -405,24 +420,33 @@ main h1 {
 }
 
 .eventposter span {
+    margin-top: 10%;
+    margin-bottom: 10%;
     width: 100px;
     height: 35px;
     color: white;
     background-color: black;
     font-size: 14px;
     text-align: center;
-    display: inline-block;
-    padding-top: 1.1%;
-    margin-right: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .eventposter h3 {
-    margin-top: 5%;
-    margin-bottom: 3%;
+    margin-top: 10%;
+    margin-bottom: 10%;
     color: black;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
 }
+
+.textbox2 {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
 
 .eventposter h4 {
     color: white;
@@ -433,7 +457,6 @@ main h1 {
 .noticesignul {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 10%;
     padding-left: 3%;
 }
 
@@ -443,29 +466,31 @@ main h1 {
 
 .textbox {
     width: 500px;
-    display: block;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 
 .event h2 {
-margin-left: -50%;
+    margin-left: -50%;
 }
 
 .event {
-        position: relative;
-        width: 40%;
-    }
+    position: relative;
+    width: 40%;
+}
 
 .leftbtn {
-background: url(../images/leftbtn_l.png) no-repeat;
-cursor: pointer;
-   width: 100%;
+    background: url(../images/leftbtn_l.png) no-repeat;
+    cursor: pointer;
+    width: 100%;
     height: 100px;
-position: absolute;
-top: 38%;
-right: -0%;
-z-index: 9;
+    position: absolute;
+    top: 38%;
+    right: -0%;
+    z-index: 9;
 }
 
 
@@ -476,7 +501,7 @@ z-index: 9;
     position: absolute;
     top: 38%;
     right: -83%;
-    z-index: 9  ;
+    z-index: 9;
     cursor: pointer;
 }
 
@@ -486,8 +511,9 @@ z-index: 9;
 .time,
 .price {
     display: flex;
-    justify-content: flex-start;
-    gap: 10%;
+    justify-content: start;
+    width: 100%;
+    gap: 40px;
 }
 
 .signul li>span {

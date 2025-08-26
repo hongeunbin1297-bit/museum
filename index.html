@@ -13,24 +13,26 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="js/museum.js"defer></script>
+  <script src="js/museum.js" defer></script>
   <link rel="stylesheet" href="css/museum.css">
   <link rel="stylesheet" href="css/responsive.css">
 
 </head>
 
 <body>
-  <header>
+<header>
     <div class="headers">
       <a href="#">
         <img src="images/국중박 화이트.png" alt="logo"></a>
       <div class="headerlogo">
         <p>Log</p>
         <p>Language</p><img src="images/돋보기.png" alt="돋보기">
+        <img class="hamburger"
+        src="images/hamburger.png">
       </div>
       <nav>
-        <ul class="main">
-          <li><a href="#">관람정보</a>
+        <ul class="main on">
+          <li class="on"><a href="#">관람정보</a>
             <ul>
               <li><a href="#">관람안내</a></li>
               <li><a href="#">전시해설</a></li>
@@ -39,7 +41,7 @@
               <li><a href="#">수어음성안내</a></li>
             </ul>
           </li>
-          <li><a href="#">전시</a>
+          <li class="on"><a href="#">전시</a>
             <ul>
               <li><a href="#">상설전시</a></li>
               <li><a href="#">특별전시</a></li>
@@ -51,7 +53,7 @@
               <li><a href="#">전시도록</a></li>
             </ul>
           </li>
-          <li><a href="#">소장품</a>
+          <li class="on"><a href="#">소장품</a>
             <ul>
               <li><a href="#">소장품검색</a></li>
               <li><a href="#">국보검색</a></li>
@@ -60,7 +62,7 @@
               <li><a href="#">기증 및 대여안내</a></li>
             </ul>
           </li>
-          <li><a href="#">문화교육</a>
+          <li class="on"><a href="#">문화교육</a>
             <ul>
               <li><a href="#">공연</a></li>
               <li><a href="#">행사</a></li>
@@ -68,7 +70,7 @@
               <li><a href="#">전문교육</a></li>
             </ul>
           </li>
-          <li><a href="#">학습행사출판</a>
+          <li class="on"><a href="#">학습행사출판</a>
             <ul>
               <li><a href="#">학술행사</a></li>
               <li><a href="#">정기간행물</a></li>
@@ -80,14 +82,14 @@
               <li><a href="#">일제강점기 자료</a></li>
             </ul>
           </li>
-          <li><a href="#">소식참여</a>
+          <li class="on"><a href="#">소식참여</a>
             <ul>
               <li><a href="#">소식</a></li>
               <li><a href="#">전자민원</a></li>
               <li><a href="#">고객의소리</a></li>
             </ul>
           </li>
-          <li><a href="#">박물관소개</a>
+          <li class="on"><a href="#">박물관소개</a>
             <ul>
               <li><a href="#">인사말</a></li>
               <li><a href="#">발자취</a></li>
@@ -103,272 +105,284 @@
     <div class="inner">
       <div class="bgcolor">
         <div class="video">
-          <video src="mainvideo.mp4" controls autoplay muted></video>
+          <video src="mainvideo.mp4" controls autoplay muted playsinline></video>
         </div>
-        <section class="main-section" data-aos="fade-up">
-          <h2>특별전시 <img src="images/plus.png" alt="plus"></h2>
-          <div class="swiper imgposters">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="imgposter">
-                  <div class="imgposter-1">
-                      <a href="#">
-                    <img class 
-                    src="images/poster1.jpg" alt="poster1">
+        <div class="swiper mobile">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/국중박 사진 1.jpg" alt="main"></div>
+            <div class="swiper-slide">
+              <img src="images/국중박 사진 2.jpg" alt="main2">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <section class="main-section" data-aos="fade-up">
+        <h2>특별전시 <img src="images/plus.png" alt="plus"></h2>
+        <div class="swiper imgposters">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="imgposter">
+                <div class="imgposter-1">
+                  <a href="#">
+                    <img class src="images/poster1.jpg" alt="poster1">
                   </a>
                   <button>예약하기</button>
-                  </div>
-                  <div class="box">
-                    <h3>현재전시</h3>
-                    <h5>특별전</h5>
-                  </div>
-                  <h4>마나 모아나 - 신성한 바다의 예술, 오세아니아</h4>
-                  <h4>2025-04-30 - 2025-09-14</h4>
                 </div>
+                <div class="box">
+                  <h3>현재전시</h3>
+                  <h5>특별전</h5>
+                </div>
+                <h4>마나 모아나 - 신성한 바다의 예술, 오세아니아</h4>
+                <h4>2025-04-30 - 2025-09-14</h4>
               </div>
-              <div class="swiper-slide">
-                <div class="imgposter">
-                    <div class="imgposter-1">
+            </div>
+            <div class="swiper-slide">
+              <div class="imgposter">
+                <div class="imgposter-1">
                   <a href="#">
                     <img src="images/poster2.jpg" alt="poster1">
                   </a>
-                   <button>예약하기</button>
-                  </div>
-                  <div class="box">
-                    <h3>현재전시</h3>
-                    <h5>특별전</h5>
-                  </div>
-                  <h4>새 나라 새 미술 : 조선전기 미술대전</h4>
-                  <h4>2025-06-10 - 2025-08-30</h4>
+                  <button>예약하기</button>
                 </div>
+                <div class="box">
+                  <h3>현재전시</h3>
+                  <h5>특별전</h5>
+                </div>
+                <h4>새 나라 새 미술 : 조선전기 미술대전</h4>
+                <h4>2025-06-10 - 2025-08-30</h4>
               </div>
-              <div class="swiper-slide">
-                <div class="imgposter">
-                  <div class="imgposter-1">
+            </div>
+            <div class="swiper-slide">
+              <div class="imgposter">
+                <div class="imgposter-1">
                   <a href="#">
                     <img src="images/poster3.png" alt="poster1">
                   </a>
                   <button>예약하기</button>
-                  </div>
-                  <div class="box">
-                    <h3>현재전시</h3>
-                    <h5>특별전</h5>
-                  </div>
-                  <h4>일본미술, 네가지 시선</h4>
-                  <h4>2025-06-17 - 2025-08-10</h4>
                 </div>
+                <div class="box">
+                  <h3>현재전시</h3>
+                  <h5>특별전</h5>
+                </div>
+                <h4>일본미술, 네가지 시선</h4>
+                <h4>2025-06-17 - 2025-08-10</h4>
               </div>
-              <div class="swiper-slide">
-                <div class="imgposter">
-                   <div class="imgposter-1">
+            </div>
+            <div class="swiper-slide">
+              <div class="imgposter">
+                <div class="imgposter-1">
                   <a href="#">
                     <img src="images/poster4.jpg" alt="poster1">
                   </a>
                   <button>예약하기</button>
-                  </div>
-                  <div class="box">
-                    <h3>현재전시</h3>
-                    <h5>특별전시</h5>
-                  </div>
-                  <h4>달 항아리를 만든 곳, 금사리</h4>
-                  <h4>2024-06-25 - 2025-08-24</h4>
                 </div>
+                <div class="box">
+                  <h3>현재전시</h3>
+                  <h5>특별전시</h5>
+                </div>
+                <h4>달 항아리를 만든 곳, 금사리</h4>
+                <h4>2024-06-25 - 2025-08-24</h4>
               </div>
-              <div class="swiper-slide">
-                <div class="imgposter">
-                  <div class="imgposter-1">
+            </div>
+            <div class="swiper-slide">
+              <div class="imgposter">
+                <div class="imgposter-1">
                   <a href="#">
                     <img src="images/poster5" alt="poster5">
                   </a>
-                   <button>예약하기</button>
-                  </div>
-                  <div class="box">
-                    <h3>현재전시</h3>
-                    <h5>특별전</h5>
-                  </div>
-                  <h4>
-                    <국보순회전, 모두가 함께하는 180일의 여정> <br>가락진 멋과 싱싱한 아름다움,분청사기
-                  </h4>
-                  <h4>2025-05-20 - 2025-08-10</h4>
+                  <button>예약하기</button>
                 </div>
+                <div class="box">
+                  <h3>현재전시</h3>
+                  <h5>특별전</h5>
+                </div>
+                <h4>
+                  <국보순회전, 모두가 함께하는 180일의 여정> <br>가락진 멋과 싱싱한 아름다움,분청사기
+                </h4>
+                <h4>2025-05-20 - 2025-08-10</h4>
               </div>
-              <div class="swiper-slide">
-                <div class="imgposter">
-                   <div class="imgposter-1">
+            </div>
+            <div class="swiper-slide">
+              <div class="imgposter">
+                <div class="imgposter-1">
                   <a href="#">
                     <img src="images/poster6.jpg" alt="poster6">
                   </a>
                   <button>예약하기</button>
-                  </div>
-                  <div class="box">
-                    <h3>현재전시</h3>
-                    <h5>특별전</h5>
-                  </div>
-                  <h4>나고 드는 땅, 만경과 동진</h4>
-                  <h4>2025-06-27 - 2025-10-19</h4>
                 </div>
+                <div class="box">
+                  <h3>현재전시</h3>
+                  <h5>특별전</h5>
+                </div>
+                <h4>나고 드는 땅, 만경과 동진</h4>
+                <h4>2025-06-27 - 2025-10-19</h4>
               </div>
-              <div class="swiper-slide">
-                <div class="imgposter">
-                  <a href="#">
-                    <div class="imgposter-1">
+            </div>
+            <div class="swiper-slide">
+              <div class="imgposter">
+                <a href="#">
+                  <div class="imgposter-1">
                     <img src="images/poster7.jpg" alt="poster7">
-                  </a>
-                  <button>예약하기</button>
-                  </div>
-                  <div class="box">
-                    <h3>현재전시</h3>
-                    <h5>특별전</h5>
-                  </div>
-                  <h4>제주에 나빌레라- 광복 80주년기념 석주명 특별전</h4>
-                  <h4>2025-07-04 - 2025-10-19</h4>
-                </div>
+                </a>
+                <button>예약하기</button>
               </div>
-              <div class="swiper-slide">
-                <div class="imgposter">
-                   <div class="imgposter-1">
-                  <a href="#">
-                    <img src="images/poster8.jpg" alt="poster8">
-                  </a>
-                   <button>예약하기</button>
-                  </div>
-                  <div class="box">
-                    <h3>현재전시</h3>
-                    <h5>특별전시</h5>
-                  </div>
-                  <h4>두 발로 세계를 제패하다</h4>
-                  <h4>2025-07-25 - 2025-12-28</h4>
-                </div>
+              <div class="box">
+                <h3>현재전시</h3>
+                <h5>특별전</h5>
               </div>
+              <h4>제주에 나빌레라- 광복 80주년기념 석주명 특별전</h4>
+              <h4>2025-07-04 - 2025-10-19</h4>
             </div>
           </div>
-          <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-            <h1>A MUSEUM FOR ALL</h1>
-          </div>
-          <h2>상설전시 <img src="images/plus.png" alt="plus"></h2>
-
-          <div class="exhibition">
-
-            <div class="exh1" data-aos="fade-left">
-              <img src="images/exhibition1.jpg" alt="기증관">
-              <p>기증관</p>
-            </div>
-            <div class="exh2" data-aos="fade-left" data-aos-delay="200">
-              <img src="images/exhibition2.jpg" alt="사유의방">
-              <p>사유의방</p>
-            </div>
-            <div class="exh3" data-aos="fade-left" data-aos-delay="400">
-              <img src="images/exhibition3.jpg" alt="서화관">
-              <p>서화관</p>
-            </div>
-            <div class="exh4" data-aos="fade-left" data-aos-delay="600">
-              <img src="images/exhibition4.jpg" alt="선사고대관">
-              <p>선사고대관</p>
-            </div>
-            <div class="exh5" data-aos="fade-right" data-aos-delay="800">
-              <img src="images/exhibition5.jpg" alt="세계문화관">
-              <p>세계문화관</p>
-            </div>
-            <div class="exh6" data-aos="fade-right" data-aos-delay="1000">
-              <img src="images/exhibition6.jpg" alt="조각공예관">
-              <p>조각공예관</p>
-            </div>
-            <div class="exh7" data-aos="fade-right" data-aos-delay="1200">
-              <img src="images/exhibition7.jpg" alt="외규장곽">
-              <p>외규장곽</p>
-            </div>
-            <div class="exh8" data-aos="fade-right" data-aos-delay="1400">
-              <img src="images/exhibition8.jpg" alt="중근세관">
-              <p>중근세관</p>
-            </div>
-
-          </div>
-          <section class="edev" data-aos="fade-up">
-            <div class="education">
-              <h2>교육 <img src="images/plus.png" alt="plus"></h2>
-              <div class="swiper educations">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <a href="#" target="_blank">
-                      <img class="logomuseum" src="images/museum.png" alt="museum"></a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#" target="_blank">
-                      <img class="logomuseum" src="images/museum2.jpg" alt="museum"></a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#" target="_blank">
-                      <img class="logomuseum" src="images/museum3.jpg" alt="museum"></a>
-                  </div>
-                </div>
-                <div class="swiper-pagination"></div>
+          <div class="swiper-slide">
+            <div class="imgposter">
+              <div class="imgposter-1">
+                <a href="#">
+                  <img src="images/poster8.jpg" alt="poster8">
+                </a>
+                <button>예약하기</button>
               </div>
-              <div class="ellipses">
-                <div class="ellipse">
-                  <a href="#" target="_blank">
-                    <img src="images/education1.png" alt="education1">
-                  </a>
-                  <h4>어린이 교육</h4>
-                </div>
-                <div class="ellipse">
-                  <a href="#" target="_blank">
-                    <img src="images/education2.png" alt="education2">
-                  </a>
-                  <h4>청소년 교육</h4>
-                </div>
-                <div class="ellipse">
-                  <a href="#" target="_blank">
-                    <img src="images/education3.png" alt="education3">
-                  </a>
-                  <h4>성인 교육</h4>
-                </div>
-                <div class="ellipse">
-                  <a href="#" target="_blank">
-                    <img src="images/education4.png" alt="education4">
-                  </a>
-                  <h4>외국인 교육</h4>
-                </div>
-                <div class="ellipse">
-                  <a href="#" target="_blank">
-                    <img src="images/education5.png" alt="education5">
-                  </a>
-                  <h4>희망계층 교육</h4>
-                </div>
+              <div class="box">
+                <h3>현재전시</h3>
+                <h5>특별전시</h5>
               </div>
+              <h4>두 발로 세계를 제패하다</h4>
+              <h4>2025-07-25 - 2025-12-28</h4>
             </div>
-            <div class="event">
-              <h2>행사 <img src="images/plus.png" alt="plus"></h2>
-              <div class="swiper eventbox">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
+          </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+      <h1>A MUSEUM FOR ALL</h1>
+    </div>
+    <h2>상설전시 <img src="images/plus.png" alt="plus"></h2>
+
+    <div class="exhibition">
+      <div class="exh1" data-aos="fade-left">
+        <img src="images/exhibition1.jpg" alt="기증관">
+        <p>기증관</p>
+      </div>
+      <div class="exh2" data-aos="fade-left" data-aos-delay="200">
+        <img src="images/exhibition2.jpg" alt="사유의방">
+        <p>사유의방</p>
+      </div>
+      <div class="exh3" data-aos="fade-left" data-aos-delay="400">
+        <img src="images/exhibition3.jpg" alt="서화관">
+        <p>서화관</p>
+      </div>
+      <div class="exh4" data-aos="fade-left" data-aos-delay="600">
+        <img src="images/exhibition4.jpg" alt="선사고대관">
+        <p>선사고대관</p>
+      </div>
+      <div class="exh5" data-aos="fade-right" data-aos-delay="800">
+        <img src="images/exhibition5.jpg" alt="세계문화관">
+        <p>세계문화관</p>
+      </div>
+      <div class="exh6" data-aos="fade-right" data-aos-delay="1000">
+        <img src="images/exhibition6.jpg" alt="조각공예관">
+        <p>조각공예관</p>
+      </div>
+      <div class="exh7" data-aos="fade-right" data-aos-delay="1200">
+        <img src="images/exhibition7.jpg" alt="외규장곽">
+        <p>외규장곽</p>
+      </div>
+      <div class="exh8" data-aos="fade-right" data-aos-delay="1400">
+        <img src="images/exhibition8.jpg" alt="중근세관">
+        <p>중근세관</p>
+      </div>
+
+    </div>
+    <section class="edev" data-aos="fade-up">
+      <div class="education">
+        <h2>교육 <img src="images/plus.png" alt="plus"></h2>
+        <div class="swiper educations">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" target="_blank">
+                <img class="logomuseum" src="images/museum.png" alt="museum"></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" target="_blank">
+                <img class="logomuseum" src="images/museum2.jpg" alt="museum"></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" target="_blank">
+                <img class="logomuseum" src="images/museum3.jpg" alt="museum"></a>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="ellipses">
+          <div class="ellipse">
+            <a href="#" target="_blank">
+              <img src="images/education1.png" alt="education1">
+            </a>
+            <h4>어린이 교육</h4>
+          </div>
+          <div class="ellipse">
+            <a href="#" target="_blank">
+              <img src="images/education2.png" alt="education2">
+            </a>
+            <h4>청소년 교육</h4>
+          </div>
+          <div class="ellipse">
+            <a href="#" target="_blank">
+              <img src="images/education3.png" alt="education3">
+            </a>
+            <h4>성인 교육</h4>
+          </div>
+          <div class="ellipse">
+            <a href="#" target="_blank">
+              <img src="images/education4.png" alt="education4">
+            </a>
+            <h4>외국인 교육</h4>
+          </div>
+          <div class="ellipse">
+            <a href="#" target="_blank">
+              <img src="images/education5.png" alt="education5">
+            </a>
+            <h4>희망계층 교육</h4>
+          </div>
+        </div>
+      </div>
+      <div class="event">
+        <h2>행사 <img src="images/plus.png" alt="plus"></h2>
+        <div class="swiper eventbox">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
               <div class="eventposter">
                 <a href="#" target="_blank">
                   <img src="images/eventposter1.jpg" alt="event1">
                 </a>
                 <div class="textbox">
                   <div class="textbox2">
-                  <h3><span>진행중</span>박물관 문화향연</h3></div>
-                  <div class="day">
-                    <h4 style="color: black; font-weight: 500;">기간</h4>
-                    <h4>2025-04-07 - 2025-10-25</h4>
+                    <span>진행중</span>
+                    <h3>박물관 문화향연</h3>
                   </div>
-                  <div class="place">
-                    <h4 style="color: black; font-weight: 500;">장소</h4>
-                    <h4>공연별 상이</h4>
-                  </div>
-                  <div class="time">
-                    <h4 style="color: black; font-weight: 500;">시간</h4>
-                    <h4>공연별 상이</h4>
-                  </div>
-                  <div class="price">
-                    <h4 style="color: black; font-weight: 500;">비용</h4>
-                    <h4>무료</h4>
+                  <div class="textbox3">
+                    <div class="day">
+                      <h4 style="color: black; font-weight: 500;">기간</h4>
+                      <h4>2025-04-07 - 2025-10-25</h4>
+                    </div>
+                    <div class="place">
+                      <h4 style="color: black; font-weight: 500;">장소</h4>
+                      <h4>공연별 상이</h4>
+                    </div>
+                    <div class="time">
+                      <h4 style="color: black; font-weight: 500;">시간</h4>
+                      <h4>공연별 상이</h4>
+                    </div>
+                    <div class="price">
+                      <h4 style="color: black; font-weight: 500;">비용</h4>
+                      <h4>무료</h4>
+                    </div>
                   </div>
                 </div>
               </div>
-              </div>
-              <div class="swiper-slide">
-               <div class="eventposter">
+            </div>
+            <div class="swiper-slide">
+              <div class="eventposter">
                 <a href="#" target="_blank">
                   <img src="images/eventposter2.jpg" alt="event2">
                 </a>
@@ -388,18 +402,18 @@
                   </div>
                   <div class="price">
                     <h4 style="color: black; font-weight: 500;">비용</h4>
-                    <h4>	VIP석 77,000원 / R석 66,000원 /S석 44,000원</h4>
+                    <h4> VIP석 77,000원 / R석 66,000원 /S석 44,000원</h4>
                   </div>
                 </div>
               </div>
-              </div>
-              <div class="swiper-slide">
-               <div class="eventposter">
+            </div>
+            <div class="swiper-slide">
+              <div class="eventposter">
                 <a href="#" target="_blank">
                   <img src="images/eventposter3.jpg" alt="event3">
                 </a>
                 <div class="textbox">
-                  <h3><span>진행중</span>국립지방박물관 문화향연 
+                  <h3><span>진행중</span>국립지방박물관 문화향연
                     - 박물관 속 무용 </h3>
                   <div class="day">
                     <h4 style="color: black; font-weight: 500;">기간</h4>
@@ -419,8 +433,8 @@
                   </div>
                 </div>
               </div>
-              </div>
-              <div class="swiper-slide">
+            </div>
+            <div class="swiper-slide">
               <div class="eventposter">
                 <a href="#" target="_blank">
                   <img src="images/eventposter4.jpg" alt="event4">
@@ -445,14 +459,15 @@
                   </div>
                 </div>
               </div>
-              </div>
-              <div class="swiper-slide">
-               <div class="eventposter">
+            </div>
+            <div class="swiper-slide">
+              <div class="eventposter">
                 <a href="#" target="_blank">
                   <img src="images/eventposter5.jpg" alt="event5">
                 </a>
                 <div class="textbox">
-                  <h3><span>진행중</span>가족 뮤지컬 <코드네임> </h3>
+                  <h3><span>진행중</span>가족 뮤지컬 <코드네임>
+                  </h3>
                   <div class="day">
                     <h4 style="color: black; font-weight: 500;">기간</h4>
                     <h4>2025-09-06 - 2025-10-19</h4>
@@ -467,57 +482,57 @@
                   </div>
                   <div class="price">
                     <h4 style="color: black; font-weight: 500;">비용</h4>
-                    <h4>	VIP석 77,000원 / R석 66,000원 /
-                      <br> S석 44,000원 / A석 22,000 </h4>
+                    <h4> VIP석 77,000원 / R석 66,000원 /
+                      <br> S석 44,000원 / A석 22,000
+                    </h4>
                   </div>
                 </div>
               </div>
-              </div>
             </div>
           </div>
-          <div class="leftbtn"></div>
-          <div class="rightbtn"></div>
-          </div>
-
-
-          </section>
-          <div class="noticesignul" data-aos="fade-up">
-            <div class="signul">
-              <h2>소식 <img src="images/plus.png" alt="plus"></h2>
-              <ul>
-                <li>상설전시관 기증관 기증1실 임시휴실안내 (7.7~7.24)<span>2025-07-01</span></li>
-                <li>상설전시관 대한제국실(120호) 임시휴실안내(7.3~7.14)
-                  <span>2025-06-28</span>
-                </li>
-                <li>국립중앙박물관 뮤지엄 아카데미(분야별 과정)
-                  <span>2025-06-09</span>
-                </li>
-                <li>상설전시관 분청사가 백자실(304호,305호) 임시 휴실안내
-                  <span>2025-06-01</span>
-                </li>
-                <li>2025년 하반기 국립중앙박물관 청년멘토 모집
-                  <span>2025-04-28</span>
-                </li>
-              </ul>
-            </div>
-            <div class="swiper noticebanner">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img class="notice" src="images/notice.jpg" alt="notice">
-                </div>
-                <div class="swiper-slide">
-                  <img class="notice" src="images/notice2.jpg" alt="notice">
-                </div>
-                <div class="swiper-slide">
-                  <img class="notice" src="images/notice3.jpg" alt="notice">
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-            
-
-          </div>
+        </div>
+        <div class="leftbtn"></div>
+        <div class="rightbtn"></div>
       </div>
+
+
+    </section>
+    <div class="noticesignul" data-aos="fade-up">
+      <div class="signul">
+        <h2>소식 <img src="images/plus.png" alt="plus"></h2>
+        <ul>
+          <li>상설전시관 기증관 기증1실 임시휴실안내 (7.7~7.24)<span>2025-07-01</span></li>
+          <li>상설전시관 대한제국실(120호) 임시휴실안내(7.3~7.14)
+            <span>2025-06-28</span>
+          </li>
+          <li>국립중앙박물관 뮤지엄 아카데미(분야별 과정)
+            <span>2025-06-09</span>
+          </li>
+          <li>상설전시관 분청사가 백자실(304호,305호) 임시 휴실안내
+            <span>2025-06-01</span>
+          </li>
+          <li>2025년 하반기 국립중앙박물관 청년멘토 모집
+            <span>2025-04-28</span>
+          </li>
+        </ul>
+      </div>
+      <div class="swiper noticebanner">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="notice" src="images/notice.jpg" alt="notice">
+          </div>
+          <div class="swiper-slide">
+            <img class="notice" src="images/notice2.jpg" alt="notice">
+          </div>
+          <div class="swiper-slide">
+            <img class="notice" src="images/notice3.jpg" alt="notice">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    </div>
+    <div class="inner">
       <div class="map" data-aos="fade-up">
         <div class="mapimg">
           <h2>오시는길</h2>
@@ -533,7 +548,8 @@
     </div>
     </div>
     <div class="gotop">
-    <a href="#"> <img src="images/gotop.png" alt="gotop"></a>
+      <a href="#"> <img src="images/gotop.png" alt="gotop"></a>
+    </div>
     </div>
   </main>
   <footer>
@@ -570,26 +586,25 @@
       </div>
   </footer>
   <script>
-   
     var swiper = new Swiper(".imgposters", {
       keyboard: true,
       loop: true,
       clickable: true,
       autoplay: true,
-       breakpoints: {
-                1920: {
-                    slidesPerView: 4
-                },
-                1440 : {
-                  slidesPerView: 3
-                },
-                1024: {
-                    slidesPerView: 2
-                },
-                768: {
-                    slidesPerView: 1
-                }
-            }
+      breakpoints: {
+        1920: {
+          slidesPerView: 4
+        },
+        1440: {
+          slidesPerView: 3
+        },
+        1024: {
+          slidesPerView: 2
+        },
+        768: {
+          slidesPerView: 1
+        }
+      }
 
     });
 
@@ -598,7 +613,7 @@
       slidesPerView: 1,
       loop: true,
       pagination: {
-        el: ".swiper-pagination", 
+        el: ".swiper-pagination",
         clickable: true,
       },
     });
@@ -607,38 +622,40 @@
       keyboard: true,
       slidesPerView: 1,
       loop: true,
-      autolpay:true,
+      autolpay: true,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
       }
-  
+
     })
 
     var swiper4 = new Swiper(".eventbox", {
-      keyboard:true,
-      slidesPerView:1,
-      loop:true,
-      autopay:true,
+      keyboard: true,
+      slidesPerView: 1,
+      loop: true,
+      autopay: true,
       navigation: {
-        nextEl : ".rightbtn",
-        prevEl : ".leftbtn",
+        nextEl: ".rightbtn",
+        prevEl: ".leftbtn",
       }
     })
 
-    //  const mouseel = document.querySelector('.mouseel')
-    //     document.addEventListener('mousemove',function(e){
-    //      const mouseX = e.clientX
-    //      const mouseY = e.clientY
-    //      mouseel.style.left =mouseX +'px'
-    //      mouseel.style.top=mouseY + 'px'
-    //     })
-
+    var swiper5 = new Swiper(".mobile", {
+      keyboard: true,
+      slidesPerView: 1,
+      loop: true,
+      autopay: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      }
+    })
 
     AOS.init({
-      duration:1000,
+      duration: 1000,
     });
-    </script>
+  </script>
 </body>
 
 </html>
