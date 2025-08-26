@@ -1,0 +1,229 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url('../images/mouse.png') 2 2, auto;
+}
+
+@media screen and (max-width:1440px) {
+
+    .video {
+        display: none;
+    }
+
+    main h1 {
+        font-size: 6rem;
+    }
+
+    .education {
+        width: 100%;
+        padding-bottom: 5%;
+    }
+
+    .edev {
+        flex-wrap: wrap;
+        padding-right: 50px;
+    }
+
+    .education .logomuseum {
+        display: none;
+
+    }
+
+    .noticesignul {
+        padding-right: 50px;
+    }
+
+
+    .event {
+        width: 100%;
+        text-align: center;
+    }
+
+    .eventposter img {
+        width: 400px;
+        height: 500px;
+
+    }
+
+    .eventposter h3 {
+        text-align: center;
+    }
+
+    .day,
+    .place,
+    .time,
+    .price {
+        width: 100%;
+        justify-content: start;
+
+    }
+
+    .leftbtn,
+    .rightbtn {
+        display: none;
+    }
+
+    .signul {
+        width: auto;
+    }
+
+    .flower {
+        display: none;
+    }
+
+    main h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main h2 {
+        margin-top: 0;
+        padding-top: 5%;
+    }
+
+    .mapimg img {
+        width: 100%;
+        padding-bottom: 10%;
+    }
+
+    .event h2 {
+        margin-left: 0;
+    }
+
+    footer .nav1 ul li {
+        font-size: 0.9rem;
+    }
+
+    .ellipses {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    main h1 {
+        font-size: 4rem;
+    }
+
+    .exhibition p {
+        font-size: 1.5rem;
+    }
+
+    .noticesignul {
+        flex-wrap: wrap;
+    }
+
+    .signul li {
+        font-size: 1rem;
+    }
+    .gotop {
+        display: none;
+    }
+      .exhibition>div {
+        width: 90%;
+
+    }
+    .footersection {
+    width: 100%;
+    font-size: 0.8rem;
+    padding-top: 0%;
+}
+
+footer .nav1 ul li {
+    font-size: 0.8rem;
+}
+footer .snslogo {
+    width: 100%;
+}
+
+    footer .nav1 ul li {
+        display: none;
+    }
+
+    footer .nav2 {
+    width: 100%;
+    padding-top: 0%;
+}
+
+footer .snslogo {
+    bottom: 0;
+}
+footer {
+    display: flex;
+    align-items: center;
+}
+
+}
+
+
+
+@media screen and (max-width:768px) {
+
+    .inner {
+        width: 100%;
+    }
+    main h1 {
+        font-size: 3rem;
+    }
+
+    .main-section {
+        padding-left: 0;
+    }
+
+    .exhibition {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .ellipses {
+        gap: 20px;
+    }
+
+
+    .signul {
+        width: 90%;
+    }
+
+
+    .noticebanner img {
+        top: 0;
+    }
+
+    .footerbtm {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+footer .nav2  {
+    width: 100%;
+    font-size: 1rem;
+    flex-direction: row;
+}
+
+.footersection img {
+    display: none;
+}
+
+footer .snslogo {
+    width: 100%;
+}
+
+.textbox {
+    display: none
+}
+
+.signul li {
+    font-size: 0.8rem;
+}
+
+header {
+    display: none
+}
+
+}
